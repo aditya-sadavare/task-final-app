@@ -1,6 +1,6 @@
 import Task from '../models/Task.js';
 
-// GET tasks with filtering, sorting, searching
+
 export const getTasks = async (req, res) => {
   try {
     const { q, priority, isDone, sort, order } = req.query;
@@ -20,7 +20,7 @@ export const getTasks = async (req, res) => {
   }
 };
 
-// POST create a task
+
 export const addTask = async (req, res) => {
   try {
     const { title, priority, dueDate } = req.body;
@@ -41,7 +41,6 @@ export const addTask = async (req, res) => {
   }
 };
 
-// PATCH toggle isDone
 export const toggleTask = async (req, res) => {
   try {
     const task = await Task.findById(req.params.id);
