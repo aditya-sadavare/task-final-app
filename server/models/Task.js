@@ -3,9 +3,7 @@ import mongoose from 'mongoose';
 const taskSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: true,
-    minlength: 3,
-    maxlength: 100
+    required: true
   },
   priority: {
     type: String,
