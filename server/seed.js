@@ -16,4 +16,4 @@ await Task.insertMany([
 ]);
 
 console.log('Database seeded');
-process.exit();
+
